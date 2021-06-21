@@ -1,4 +1,4 @@
-# Add Two Numbers
+# Calculate Sum
 
 ## Problem Description
 Write a program that does the following:
