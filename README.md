@@ -7,7 +7,7 @@ Write a program that does the following:
 * Prints the result in a nicely formatted sentence.
 
 **Extensions**
-* Include the two numbers being added in the printed response, in addition to the sum.
+* Include the numbers being added in the printed response, in addition to the sum.
 * **Challenge** Can you do this in only 4 lines?
 
 ## Example (sample inputs in parentheses)
