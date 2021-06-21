@@ -1,25 +1,28 @@
-# Master CT Assignment Template 
-
-Use this master template to create CT Assignment Templates.
+# Add Two Numbers
 
 ## Problem Description
-Problem description goes here. 
+Write a program that does the following:
+* Prompts the user for three numbers
+* Calculates the sum of those numbers
+* Prints the result in a nicely formatted sentence.
 
-* Steps to take go here. 
+**Extensions**
+* Include the two numbers being added in the printed response, in addition to the sum.
+* **Challenge** Can you do this in only 4 lines?
 
-## Example
+## Example (sample inputs in parentheses)
 ```
-Value to increment? 5
-10
+Enter a number: (7)
+Enter a second number: (12)
+Enter a third number: 2
+output: 21
+output with extension: The sum of 7, 12 and 2 is 21.
+output with extension, version 2: 7 + 12 + 2 = 21
+
 ```
 
-## Suggested Approach
-1) Suggestions go here
-
-## Hints
-* Use the section under `if __name__ == '__main__': ` to change arguments and check your work.
-* When you are happy with your code, use `input()` to prompt the user for a value.
-* Add code to [my_code.py](./my_code.py) to make it do the desired thing.
-* Run your code with: `python my_code.py` or the run button
-* Run your tests with: `pytest`
+## Notes
+* Test your code at least three times with different inputs to be sure it works as expected.
+* Commit and Push to GitHub
+* There is no test code, but be sure your changes appear on GitHub
 
