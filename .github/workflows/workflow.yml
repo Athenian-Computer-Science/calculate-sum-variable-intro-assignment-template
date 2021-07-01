@@ -9,7 +9,6 @@ jobs:
 
   style_test:
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v2
@@ -26,7 +25,7 @@ jobs:
       run: flake8 src/my_code.py >> .github/ISSUE_TEMPLATE/style-issues.md
 
     - name: Style fail message
-      if: failure()
+      if: ${{ steps.style.outcome == 'failure'}}
       uses: machine-learning-apps/pr-comment@1.0.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -34,9 +33,10 @@ jobs:
         path: .github/ISSUE_TEMPLATE/style-issues.md
 
     - name: Success message
-      if: steps.style.outcome == 'success'
+      if: ${{ steps.style.outcome == 'success' }}
       uses: machine-learning-apps/pr-comment@1.0.0
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       with:
         path: .github/ISSUE_TEMPLATE/test-success.md
+
