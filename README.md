@@ -24,7 +24,7 @@ output with extension, version 2: 7 + 12 + 2 = 21
 ## Notes
 * Test your code at least three times with different inputs to be sure it works as expected.
 * Commit and Push to GitHub
-* There is no test code, but be sure your changes appear on GitHub
+* * Be sure your changes appear on GitHub and pass the style checks.There is no test code, but be sure your changes appear on GitHub
 
 
 **Attribution:**
